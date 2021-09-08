@@ -3,6 +3,7 @@
 	quotepath = false
 	autocrlf = input
 	editor=nvim
+	pager = less -R
 [user]
 	name = Justin Donaldson
 	email = jdonaldson@gmail.com
