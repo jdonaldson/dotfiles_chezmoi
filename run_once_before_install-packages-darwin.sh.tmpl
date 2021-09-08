@@ -1,11 +1,4 @@
 {{- if (eq .chezmoi.os "darwin") -}}
 #!/bin/bash
-
-brew bundle --no-lock --file=/dev/stdin <<EOF
-
-brew "git" 
-brew "neovim" 
-brew "fzf"
-
-EOF
+brew bundle --no-lock --file=~/Brewfile
 {{ end -}}
