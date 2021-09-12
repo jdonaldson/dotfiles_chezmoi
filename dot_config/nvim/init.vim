@@ -1,6 +1,6 @@
 " Require common plugins
-lua require('plugins')
-
+source ~/.vim/autoload/plug.vim
+source ~/.vim/autoload/plugins.vim
 
 " Default Command overrides
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -32,7 +32,7 @@ nmap <Leader>ev :e $MYVIMRC<CR>
 " source my vimrc
 nmap <Leader>sv :source $MYVIMRC<CR>
 " edit my plugins configuration
-nmap <Leader>ep :e ~/.config/nvim/lua/plugins.lua<CR>
+nmap <Leader>ep :e ~/.vim/autoload/plugins.vim<CR>
 
 " add vimrc/init.vim/plugins.lua with chezmoi if I change them
 autocmd BufWritePost ~/.config/nvim/lua/plugins.lua: !chezmoi add --source-path % <CR>
@@ -183,4 +183,5 @@ for _, lsp in ipairs(servers) do
   }
 end
 EOF
+
 
