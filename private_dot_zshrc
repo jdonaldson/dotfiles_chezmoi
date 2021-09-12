@@ -1,3 +1,4 @@
+source ~/.aliases
 export LESS=eFRX
 
 session_name="default"
